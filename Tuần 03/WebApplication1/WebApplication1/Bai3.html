@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, td {
+            border: 1px solid black;
+        }
+        td {
+            padding: 10px;
+        }
+        input, select {
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr style="font-weight: bold; color: white; height: 30px;">
+            <td bgcolor="gray" colspan="2">
+                THÔNG TIN NGƯỜI GỬI
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">* Người gửi</td>
+            <td>
+                <form>
+                    <input type="text" placeholder="Nhập họ và tên" style="width: 100%;" size="100%"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">* E-Mail</td>
+            <td>
+                <form>
+                    <input type="text" placeholder="Nhập Email" style="width: 100%;"  />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">* Điện thoại</td>
+            <td>
+                <form>
+                    <input type="number" placeholder="Nhập phone" style="width: 100%;"/>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr style="font-weight: bold; color: white; height: 30px;">
+            <td bgcolor="gray" colspan="2">
+                THÔNG TIN NGƯỜI NHẬN
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">* Người nhận</td>
+            <td>
+                <form>
+                    <input type="text" placeholder="Nhập họ và tên" style="width: 100%;" size="100%"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">* Điện thoại</td>
+            <td>
+                <form>
+                    <input type="number" placeholder="Nhập phone" style="width: 100%;"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">* Địa chỉ</td>
+            <td>
+                <form>
+                    <input type="text" placeholder="Nhập địa chỉ" style="width: 100%;"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">* Thành phố</td>
+            <td>
+                <select name="Province" style="width: 100%;">
+                <option value="1">TP.HCM</option>
+                <option value="2">Hà Nội</option>
+                <option value="3">Huế</option>
+                <option value="4">Đà Nẵng</option>
+                <option value="5">Quảng Ninh</option>
+                <option value="6">Cần Thơ</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">* Quận</td>
+            <td>
+                <select name="Province" style="width: 100%;">
+                <option value="1">Quận 1</option>
+                <option value="2">Quận 2</option>
+                <option value="3">Quận 3</option>
+                <option value="4">Quận Tân Phú</option>
+                <option value="5">Quận Tân Bình</option>
+                <option value="6">Quận Thủ Đức</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

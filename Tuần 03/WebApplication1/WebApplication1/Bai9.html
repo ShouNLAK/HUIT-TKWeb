@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bài 9</title>
+    <style>
+        #label {
+            color: blue;
+            text-align: center;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <table style="background-image:url(Beer.jpg); background-repeat: no-repeat; background-size: cover;">
+            <tr>
+                <td colspan="4" style="text-align: center;color: red;font-weight: bold;font-size: 30px;" >Thông tin khách hàng</td>
+            </tr>
+            <tr>
+                <td id="label">Tên khách hàng :</td>
+                <td>
+                        <input type="text" style="width: 100%;">
+                </td>
+            </tr>
+            <tr>
+                <td id="label">Tình trạng :</td>
+                <td>
+                    <select>
+                        <option>Khách hàng mới</option>
+                        <option>Khách hàng thành viên</option>
+                        <option>Khách hàng VIP</option>
+                    </select>
+                </td>
+                <td style="text-align: right;" id="label"> Mã KH:</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td id="label">Chọn khu:</td>
+                <td>
+                    <input type="radio" id="KS"><label for="KS">Khách sạn</label>
+                    <input type="radio" id="Karaoke"><label for="Karaoke">Karaoke</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1"></td>
+                <td id="label">Số phòng :</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1"></td>
+                    <td>
+                        <input type="radio" id="club"><label for="club">Bar club</label>
+                        <input type="radio" id="coffee"><label for="coffee">Coffee</label>
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="1"></td>
+                <td id="label">Số bàn:</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td id="label">Yêu cầu:</td>
+                <td>
+                    <textarea rows="3" cols="35" ></textarea>>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: center;">
+                    <input type="button" value="GỬI THÔNG TIN"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: center; color: red; font-weight: bold;"> Quý khách vui lòng điền đầy đủ thông tin trước khi đặt món ăn</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

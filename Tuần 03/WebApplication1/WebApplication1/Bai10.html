@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bài 10</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .box { width: 600px; border: 1px solid #f2b3ad; padding: 10px; }
+        .section-title { font-weight: bold; margin: 8px 0; }
+        .option-box { border: 1px solid #f2b3ad; padding: 8px; display: inline-block; width: 48%; text-align: center; }
+        .row { width: 100%; }
+        .input { width: 96%; padding: 6px; }
+        .select { width: 98%; padding: 6px; }
+        .note { width: 98%; height: 70px; }
+        .pay-box { border: 1px solid #f2b3ad; padding: 8px; display: inline-block; width: 30%; text-align: center; }
+        .btn { background:#f05a4a; color:#fff; border:none; width:100%; padding:10px 0; font-weight:bold; }
+        .agree { border:1px solid #f2b3ad; padding:8px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="section-title">Chọn địa chỉ nhận hàng</div>
+        <table class="row" cellspacing="6">
+            <tr>
+                <td class="option-box">
+                    <input type="radio" name="ship" checked> <label>NHẬN HÀNG TẠI NHÀ</label>
+                </td>
+                <td>
+                    <input type="radio" name="ship"> <label>NHẬN HÀNG TẠI TRUNG TÂM</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="input" type="text" placeholder="Họ và tên (*)"></td>
+                <td><input class="input" type="text" placeholder="Số điện thoại (*)"></td>
+            </tr>
+            <tr>
+                <td><input class="input" type="text" placeholder="Email"></td>
+                <td>
+                    <select class="select">
+                        <option>Tỉnh / Thành phố (*)</option>
+                        <option>TP. Hồ Chí Minh</option>
+                        <option>Hà Nội</option>
+                        <option>Đà Nẵng</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select class="select">
+                        <option>Quận / Huyện (*)</option>
+                        <option>Quận 1</option>
+                        <option>Quận 2</option>
+                        <option>Quận 3</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="select">
+                        <option>Phường / Xã (*)</option>
+                        <option>Phường 1</option>
+                        <option>Phường 2</option>
+                        <option>Phường 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="input" type="text" placeholder="Số nhà / Tên đường (*)"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" checked> Sử dụng thông tin này để đăng ký tài khoản mua hàng !
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea class="note" placeholder="Để lại lời nhắn cho Nguyễn Kim"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-title">Chọn hình thức thanh toán</div>
+        <table class="row" cellspacing="6">
+            <tr>
+                <td class="pay-box">
+                    <input type="radio" name="pay" checked> Thanh toán khi nhận hàng
+                </td>
+                <td class="pay-box">
+                    <input type="radio" name="pay"> Thẻ ATM/Internet banking
+                </td>
+                <td class="pay-box">
+                    <input type="radio" name="pay"> Thẻ tín dụng
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="agree">
+                    <input type="checkbox"> Bạn muốn sử dụng dịch vụ lắp đặt
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="agree">
+                    <input type="checkbox" checked> Tôi đồng ý thỏa thuận bảo mật và chính sách mua hàng
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="agree">
+                    <input type="checkbox"> Yêu cầu xuất hóa đơn GTGT cho đơn hàng này
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button class="btn">THANH TOÁN</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

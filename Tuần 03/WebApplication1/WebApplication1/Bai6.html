@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bài 6</title>
+        <style>
+        .center-table td, .center-table th {
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" style="width: 100%;">
+        <tr>
+            <td colspan="5" style="text-align: center; background-color: cyan; font-weight: bold; height: 35px;">THÊM SINH VIÊN</td>
+        </tr>
+        <tr>
+            <td>Mã sinh viên :</td>
+            <td colspan="4">
+                <form>
+                    <input type="text" style="width: 100%;">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Họ tên : </td>
+            <td>
+                <form>
+                    <input type="text" style="width: 100%;">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Ngày sinh : </td>
+            <td>
+                <form>
+                    <input type="date" style="width: 100%;">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Hình :</td>
+            <td><input type="file" style="width: 100%;"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="4">
+                <form>
+                    <input type="button" value="Add">
+                    <input type="button" value="Update">
+                    <input type="button" value="Save">
+                </form>
+            </td>
+        </tr>
+    </table>
+    <table class="center-table" border="1">
+        <tr>
+            <td colspan="5" style="background-color: blue; color: white; font-weight: bold; height: 35px;">DANH SÁCH SINH VIÊN</td>
+        </tr>
+        <tr>
+            <td width="20%" style="font-weight: bold; background-color: aqua;">STT</td>
+            <td width="20%" style="font-weight: bold; background-color: aqua;">Mã SV</td>
+            <td width="20%" style="font-weight: bold; background-color: aqua;">Họ tên</td>
+            <td width="20%" style="font-weight: bold; background-color: aqua;">Ngày sinh</td>
+            <td width="20%" style="font-weight: bold; background-color: aqua;">Hình</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>01001009</td>
+            <td>Nguyễn Hương Lan</td>
+            <td>01/01/2000</td>
+            <td>h1.jpg</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>01001010</td>
+            <td>Nguyễn Thành Nhân</td>
+            <td>21/12/2000</td>
+            <td>h2.jpg</td>
+        </tr>
+    </table>
+</body>
+</html>

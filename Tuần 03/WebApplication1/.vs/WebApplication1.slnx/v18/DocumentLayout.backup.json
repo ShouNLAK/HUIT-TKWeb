@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Shou\\Coding\\Github\\HUIT-TKWeb\\Tu\u1EA7n 03\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{575A65D1-FC93-4DD5-BA50-01BB693AE1EE}|WebApplication1\\WebApplication1.csproj|c:\\users\\shou\\coding\\github\\huit-tkweb\\tu\u1EA7n 03\\webapplication1\\webapplication1\\bai3.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{575A65D1-FC93-4DD5-BA50-01BB693AE1EE}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\bai3.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{575A65D1-FC93-4DD5-BA50-01BB693AE1EE}|WebApplication1\\WebApplication1.csproj|c:\\users\\shou\\coding\\github\\huit-tkweb\\tu\u1EA7n 03\\webapplication1\\webapplication1\\bai2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{575A65D1-FC93-4DD5-BA50-01BB693AE1EE}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\bai2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{575A65D1-FC93-4DD5-BA50-01BB693AE1EE}|WebApplication1\\WebApplication1.csproj|c:\\users\\shou\\coding\\github\\huit-tkweb\\tu\u1EA7n 03\\webapplication1\\webapplication1\\bai1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{575A65D1-FC93-4DD5-BA50-01BB693AE1EE}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\bai1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{575A65D1-FC93-4DD5-BA50-01BB693AE1EE}|WebApplication1\\WebApplication1.csproj|c:\\users\\shou\\coding\\github\\huit-tkweb\\tu\u1EA7n 03\\webapplication1\\webapplication1\\thiennhien.gif||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{575A65D1-FC93-4DD5-BA50-01BB693AE1EE}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\thiennhien.gif||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{575A65D1-FC93-4DD5-BA50-01BB693AE1EE}|WebApplication1\\WebApplication1.csproj|c:\\users\\shou\\coding\\github\\huit-tkweb\\tu\u1EA7n 03\\webapplication1\\webapplication1\\samsung.mp3||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{575A65D1-FC93-4DD5-BA50-01BB693AE1EE}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\samsung.mp3||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bai3.html",
+              "DocumentMoniker": "C:\\Users\\Shou\\Coding\\Github\\HUIT-TKWeb\\Tu\u1EA7n 03\\WebApplication1\\WebApplication1\\Bai3.html",
+              "RelativeDocumentMoniker": "WebApplication1\\Bai3.html",
+              "ToolTip": "C:\\Users\\Shou\\Coding\\Github\\HUIT-TKWeb\\Tu\u1EA7n 03\\WebApplication1\\WebApplication1\\Bai3.html",
+              "RelativeToolTip": "WebApplication1\\Bai3.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-02T06:45:01.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bai2.html",
+              "DocumentMoniker": "C:\\Users\\Shou\\Coding\\Github\\HUIT-TKWeb\\Tu\u1EA7n 03\\WebApplication1\\WebApplication1\\Bai2.html",
+              "RelativeDocumentMoniker": "WebApplication1\\Bai2.html",
+              "ToolTip": "C:\\Users\\Shou\\Coding\\Github\\HUIT-TKWeb\\Tu\u1EA7n 03\\WebApplication1\\WebApplication1\\Bai2.html",
+              "RelativeToolTip": "WebApplication1\\Bai2.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-02T06:28:07.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bai1.html",
+              "DocumentMoniker": "C:\\Users\\Shou\\Coding\\Github\\HUIT-TKWeb\\Tu\u1EA7n 03\\WebApplication1\\WebApplication1\\Bai1.html",
+              "RelativeDocumentMoniker": "WebApplication1\\Bai1.html",
+              "ToolTip": "C:\\Users\\Shou\\Coding\\Github\\HUIT-TKWeb\\Tu\u1EA7n 03\\WebApplication1\\WebApplication1\\Bai1.html",
+              "RelativeToolTip": "WebApplication1\\Bai1.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-02T06:02:49.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ThienNhien.gif",
+              "DocumentMoniker": "C:\\Users\\Shou\\Coding\\Github\\HUIT-TKWeb\\Tu\u1EA7n 03\\WebApplication1\\WebApplication1\\ThienNhien.gif",
+              "RelativeDocumentMoniker": "WebApplication1\\ThienNhien.gif",
+              "ToolTip": "C:\\Users\\Shou\\Coding\\Github\\HUIT-TKWeb\\Tu\u1EA7n 03\\WebApplication1\\WebApplication1\\ThienNhien.gif",
+              "RelativeToolTip": "WebApplication1\\ThienNhien.gif",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-02-02T06:02:46.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "samsung.mp3",
+              "DocumentMoniker": "C:\\Users\\Shou\\Coding\\Github\\HUIT-TKWeb\\Tu\u1EA7n 03\\WebApplication1\\WebApplication1\\samsung.mp3",
+              "RelativeDocumentMoniker": "WebApplication1\\samsung.mp3",
+              "ToolTip": "C:\\Users\\Shou\\Coding\\Github\\HUIT-TKWeb\\Tu\u1EA7n 03\\WebApplication1\\WebApplication1\\samsung.mp3",
+              "RelativeToolTip": "WebApplication1\\samsung.mp3",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-02T06:02:40.265Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
