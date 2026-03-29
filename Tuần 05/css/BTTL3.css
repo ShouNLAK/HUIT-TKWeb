@@ -1,0 +1,45 @@
+
+#layout {
+    width: 900px;
+    margin: 15px;
+}
+#head {
+    width: 100%;
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px 0;
+}
+#page {
+    display: flex;
+    gap: 15px;
+    padding: 12px 0 ;
+}
+#left, #right, #content
+{
+    height: 250px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+#left {
+    background: lightgray;
+    width: 20%;
+}
+#content {
+    background: lightgray;
+    flex: 1;
+}
+#right {
+    background: lightgray;
+    width: 20%;
+}
+#footer {
+    background: lightgray;
+    text-align: center;
+    padding: 10px;
+}
+
+div{
+    font-size: 24;
+}

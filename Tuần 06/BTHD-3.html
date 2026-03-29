@@ -1,0 +1,57 @@
+<head> 
+    <title>CSS Display Example</title> 
+    <style> 
+        .block { 
+            display: block; 
+            background-color: lightblue; 
+            padding: 10px; 
+            margin: 10px 0; 
+        } 
+        .inline { 
+            display: inline; 
+            background-color: lightcoral; 
+            padding: 5px; 
+        } 
+        .inline-block { 
+            display: inline-block; 
+            background-color: lightgreen; 
+            width: 100px; 
+            height: 50px; 
+            margin: 10px; 
+        } 
+        .hidden { 
+            display: none; 
+        } 
+        .flex-container { 
+            display: flex; 
+            justify-content: space-around; 
+            background-color: lightyellow; 
+            padding: 10px; 
+        } 
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            gap: 10px; 
+            background-color: lightpink; 
+            padding: 10px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="block">Block Element</div> 
+    <span class="inline">Inline Element</span> 
+    <span class="inline">Another Inline Element</span> 
+    <div class="inline-block">Inline-Block Element</div> 
+    <div class="inline-block">Another Inline-Block Element</div> 
+    <div class="hidden">This element is hidden</div> 
+    <div class="flex-container"> 
+        <div>Flex Item 1</div> 
+        <div>Flex Item 2</div> 
+        <div>Flex Item 3</div> 
+    </div> 
+    <div class="grid-container"> 
+        <div>Grid Item 1</div> 
+        <div>Grid Item 2</div> 
+        <div>Grid Item 3</div> 
+    </div> 
+</body>

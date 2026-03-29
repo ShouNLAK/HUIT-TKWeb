@@ -1,0 +1,37 @@
+img{
+    width: 80%;
+    transition: 2s;
+    margin: 20px;
+}
+
+img:hover
+{
+    scale: 1.2;
+}
+
+#news-title
+{
+    text-decoration: underline;
+    color: #0000FF;
+    text-align: left;
+}
+
+#relatednews
+{
+    font-size: 24px;
+    font-weight: bold;
+    width:100%;
+}
+
+#left,
+#right {
+    flex: 50%;
+    width: 50%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 800px;
+}

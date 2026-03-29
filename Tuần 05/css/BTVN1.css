@@ -1,0 +1,60 @@
+
+#layout {
+    width: 900px;
+    margin: 12px auto;
+}
+#head {
+    width: 900px;
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px 0;
+}
+#page {
+    display: flex;
+    gap: 15px;
+    padding: 12px 0;
+}
+#left, #right, #content
+{
+    height: 250px;
+}
+
+#left, #logo {
+    background: lightgray;
+    width: 20%;
+}
+#content {
+    background: lightgray;
+    flex: 1;
+}
+#right {
+    background: lightgray;
+    width: 20%;
+}
+#footer {
+    background: lightgray;
+    text-align: center;
+    padding: 10px;
+}
+
+div{
+    font-size: 24;
+}
+
+#logo, #banner
+{
+    height: 100px;
+}
+
+#banner
+{
+    background: lightgray;
+    width: 80%;
+}
+
+#left, #right, #content, #logo, #banner
+{
+    text-align: center;
+    display: grid;
+    place-items: center;
+}

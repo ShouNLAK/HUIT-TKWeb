@@ -1,0 +1,12 @@
+.Container {
+width:700px;
+border:3px solid blue;
+margin:auto;
+margin-top: 50px;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-indent: 50px;
+}

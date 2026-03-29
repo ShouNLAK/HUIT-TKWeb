@@ -1,0 +1,28 @@
+<head> 
+    <meta charset="UTF-8"> 
+    <title>CSS Animation Example</title> 
+    <style> 
+        .box { 
+            width: 100px; 
+            height: 100px; 
+            padding-left: 10px; 
+            padding-top: 10px; 
+            background-color: lightcoral; 
+            animation: move 2s ease-in-out infinite; 
+        } 
+        @keyframes move { 
+            0% { 
+                transform: translateX(0); 
+            } 
+            50% { 
+                transform: translateX(200px); 
+            } 
+            100% { 
+                 transform: translateX(0); 
+            } 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="box">Hello</div> 
+</body>
