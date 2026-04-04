@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: repeat(10,100px);
+                grid-template-rows: repeat(6,100px);
+                gap: 10px;
+            } 
+            .container2{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(4,1fr);
+            }
+            .header{
+                background-color: lightskyblue;
+                width: 100%;
+                grid-column: span 10;
+            }
+            .menu{
+                grid-column: 1 / span 2;
+                grid-row : 2 / span 4;
+                background-color: green;
+                align-content:center;
+            }
+            .header, .menu{
+                color: white;
+            }
+
+            .main{
+                grid-column: 3 / span 6;
+                grid-row : 2 / span 4;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            .img{
+                width: 100%;
+                height: 100%;
+            }
+            .sidebar{
+                grid-column: 9 / span 2;
+                grid-row: 2 / span 4;
+                background-color: orange;
+            }
+            .menu li a { 
+                text-decoration: none; 
+                line-height: 30px;
+            } 
+            .menu li a:hover, .menu li:hover { 
+                font-weight: bold; 
+                background-color: rgba(243, 243, 243, 0.521); 
+            }
+            .footer{
+                grid-column: span 10;
+                grid-row : 6;
+                width: 100%;
+                background-color: gray;
+            }
+            .menu{
+                list-style: none;
+                margin: 0;
+            }
+            p{
+                font-weight: bold;
+                padding: 0 10px;
+            }
+            .headline1{
+                grid-row: 1 / span 3;
+                grid-column: 1;
+            }
+            .pic1
+            {
+                grid-column: 1;
+                grid-row: 2;
+                width: 100%;
+            }
+            .pic2
+            {
+                grid-column: 3;
+                row-gap: 4;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Welcome to My Homepage</h1>
+                <p>Use the menu to select difference style sheets</p>
+            </header>
+            <ul class="menu">
+                <li><a>Trang chủ</a></li>
+                <li><a>Dịch vụ</a></li>
+                <li><a>Liên hệ</a></li>
+                <li><a>Về chúng tôi</a></li>
+            </ul>
+            <div class="main">
+                <div class="container2">
+                    <div class="headline1">Same page Difference Stylesheets</div>
+                    <div class="art1">This is a Demonstration of how different stylesheet can change the layout of your html Page. You can change the layout of this page by selecting the different style sheet in the menu, or by selecting one of the following links StyleSheet1, StyleSheet2, StyleSheet3, StyleSheet4</div>
+                    <img class="pic1" src="img/Goat.jpg"/>
+                    <div class="headline2">No Style</div>
+                    <div class="art2">This is a Demonstration of how different stylesheet can change the layout of your html Page. You can change the layout of this page try selecting the different style sheet in the menu, or by selecting one of the following links</div>
+                    <img class="pic2" src="img/Goat.jpg"/>
+                </div>
+            </div>
+            <div class="sidebar">
+                <p> Side-Bar </p>
+                Từ ngày 18/5 đến 14/6, độc giả chia sẻ khoảnh khắc đầu tiên đáng nhớ của bé như ăn dặm, bi bập bênh, chơi cùng những bức đồ chơi tiên; cảm xúc hạnh phúc, lòng ngóng chờ khi em bé lần đầu tập đi, tắm, massage, hát ru, mặc đồ... cho con, có hội nhận giải thưởng tiền mặt và quà tặng hấp dẫn. Ba mẹ trúng giải sẽ nhận gói tiết kiệm bỉm tã nhập khẩu 2 triệu đồng hoặc 5 triệu đồng, áp dụng khi mua tại Genki - Whoopee tại Con Cưng - hệ thống siêu thị mẹ bầu và em bé toàn quốc trong một năm, không giới hạn số lần mua.
+            </div>
+            <footer class="footer">dcdcdcdcdcd</footer>
+        </div>
+    </body>
+</html>

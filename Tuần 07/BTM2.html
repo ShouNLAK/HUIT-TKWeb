@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            .container{
+                display: grid;
+                gap: 10px;
+                width: 90%;
+                margin: 25px auto;
+                font-size: 20px;
+                grid-template-areas:
+                "header  header" 
+                "sidebar content" 
+                "footer  footer"; 
+                grid-template-columns:  1fr  3fr;
+                grid-template-rows:  60px  auto  50px;
+            }
+            .headers
+            {
+                background-color: green;
+                text-align: center;
+                color: white;
+                line-height: 60px;
+                grid-area: header;
+            }
+            .sidebars{
+                background-color: blue;
+                width: 100%;
+                line-height: 40px;
+                color: white;
+                grid-area: sidebar;
+            }
+            .contents{
+                background-color: #808080;
+                line-height: 40px;
+                grid-area: content;
+            }
+            .footers{
+                background-color: black;
+                color: white;
+                line-height: 40px;
+                width: 100%;
+                grid-area: footer;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"> 
+            <header class="headers">Header</header> 
+            <aside class="sidebars">Sidebar</aside> 
+            <main class="contents">Content</main> 
+            <footer class="footers">Footer</footer> 
+        </div>
+    </body>
+</html>
