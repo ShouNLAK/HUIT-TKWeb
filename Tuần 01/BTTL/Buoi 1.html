@@ -1,67 +1,74 @@
-<html>
+<!DOCTYPE html>
+<html lang="vi">
 	<head>
-		<title> Buổi 1 </title>
+		<meta charset="utf-8" />
+		<title>Buổi 1 - HTML Cơ bản</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		Hello world
-		<p class = "First"> This is the first class which is using the default style has been configured </p>
-		<p class = "Second" style = "color:blue"> This is the second class which is using inline even through at have the same configure as the first one </p>
-		<p class = "Third"> This is the third class which is using specific configure as other one don't have </p>
-		<img src="img/rickroll-roll.gif" alt="Rick roll" loading="lazy">
-		<hr>
-		<ol> 
-			Đây là danh sách các Heading
-			<li> <h1> Heading 1 </h1> </li>
-			<li> <h2> Heading 2 </h2> </li>
-			<li> <h3> Heading 3 </h3> </li>
-			<li> <h4> Heading 4 </h4> </li>
-			<li> <h5> Heading 5 </h5> </li>
-			<li> <h6> Heading 6 </h6> </li>
-		</ol>
-		<hr>
-		<ul>
-			Đây là các thẻ xử lý văn bản
-				<p> Đây là một văn bản </p>
-				<br> Xuống dòng nhưng không sử dụng toàn bộ một dòng như <code> p </code>
-				<p> Sử dụng <code>hr</code> để phân cách nội dung
-				<p> Văn bản được tự xử lý </p> <pre>     Văn băn     chưa được xử lý </pre>
-				<blockquote> Được sử dụng để trích dẫn </blockquote>
-				<code> code </code> được sử dụng để không thực thi code <br>
-				<big> Chữ cỡ lớn </big> <br>
-				<small> Chữ cỡ nhỏ </small> <br>
-				<b> Văn bản được in đậm </b> <br>
-				<i> Văn bản được in nghiêng </i> <br>
-				<strong> Văn bản nhấn mạnh </strong> <br>
-				<p> Công thức hóa học : H<sub>2</sub>O </p>
-				<p> Công thức vật lý : E = mc<sup>2</sup> </p>
-			</li>
-		<hr>
-		Các thẻ tạo danh sách
-		Thứ tự
+		<h1>Bài 1: Tổng quan thiết kế Web - Ngôn ngữ HTML</h1>
+		<p>Thực hành các thẻ HTML cơ bản theo nội dung bài giảng tuần 1.</p>
+
+		<p class="First">This paragraph uses CSS class styling.</p>
+		<p class="Second" style="color: blue">This paragraph demonstrates inline CSS.</p>
+		<p class="Third">This paragraph uses a separate custom CSS class.</p>
+
+		<img src="img/rickroll-roll.gif" alt="Rick roll" loading="lazy" />
+
+		<hr />
+		<h2>Các cấp Heading</h2>
 		<ol>
-			<li> Mục 1 </li>
-			<li> Mục 2 </li>
+			<li><h1>Heading 1</h1></li>
+			<li><h2>Heading 2</h2></li>
+			<li><h3>Heading 3</h3></li>
+			<li><h4>Heading 4</h4></li>
+			<li><h5>Heading 5</h5></li>
+			<li><h6>Heading 6</h6></li>
 		</ol>
-		Phi thứ tự
+
+		<hr />
+		<h2>Các thẻ xử lý văn bản</h2>
 		<ul>
-			<li> Đánh dấu 1 </li>
-			<li> Đánh dấu 2 </li>
+			<li><p>Đây là một đoạn văn bản với thẻ <code>p</code>.</p></li>
+			<li>Xuống dòng với thẻ <code>br</code>.<br />Ví dụ dòng mới.</li>
+			<li>Sử dụng <code>hr</code> để phân cách nội dung.</li>
+			<li><pre>Văn bản giữ nguyên khoảng trắng với thẻ pre</pre></li>
+			<li><blockquote>Ví dụ trích dẫn bằng thẻ blockquote.</blockquote></li>
+			<li><code>code</code> dùng để hiển thị đoạn mã.</li>
+			<li><big>Chữ cỡ lớn</big> và <small>chữ cỡ nhỏ</small>.</li>
+			<li><b>Chữ in đậm</b>, <i>chữ in nghiêng</i>, <strong>chữ nhấn mạnh</strong>.</li>
+			<li>Công thức hóa học: H<sub>2</sub>O</li>
+			<li>Công thức vật lý: E = mc<sup>2</sup></li>
 		</ul>
-		Danh sách lồng
+
+		<hr />
+		<h2>Các thẻ tạo danh sách</h2>
+		<h3>Danh sách có thứ tự</h3>
+		<ol>
+			<li>Mục 1</li>
+			<li>Mục 2</li>
+		</ol>
+
+		<h3>Danh sách không thứ tự</h3>
+		<ul>
+			<li>Đánh dấu 1</li>
+			<li>Đánh dấu 2</li>
+		</ul>
+
+		<h3>Danh sách lồng nhau</h3>
 		<ul>
 			<li>
 				Mục chính 1
 				<ol>
-					<li> Mục con 1.1 </li>
-					<li> Mục con 1.2 </li>
+					<li>Mục con 1.1</li>
+					<li>Mục con 1.2</li>
 				</ol>
 			</li>
 			<li>
 				Mục chính 2
 				<ol>
-					<li> Mục con 2.1 </li>
-					<li> Mục con 2.2 </li>
+					<li>Mục con 2.1</li>
+					<li>Mục con 2.2</li>
 				</ol>
 			</li>
 		</ul>
