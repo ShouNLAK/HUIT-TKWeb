@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>Tuần 07 - BTVN2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 24px;
+            background: #f0f0f0;
+            font-family: "Times New Roman", serif;
+        }
+
+        .layout {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 2px solid #1d8de2;
+            background: #ffffff;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+            grid-template-rows: 48px 40px 180px 48px 48px;
+            gap: 2px;
+            padding: 2px;
+        }
+
+        .item {
+            border: 2px solid #1d8de2;
+            background: #bcd0e1;
+            text-align: center;
+            font-size: 22px;
+            line-height: 42px;
+        }
+
+        .header {
+            grid-column: 1 / span 10;
+        }
+
+        .link {
+            grid-column: 1 / span 10;
+        }
+
+        .menu {
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 2;
+            line-height: 110px;
+        }
+
+        .content {
+            grid-column: 3 / span 6;
+            grid-row: 3;
+            padding-top: 14px;
+            line-height: 1.25;
+        }
+
+        .right {
+            grid-column: 9 / span 2;
+            grid-row: 3 / span 2;
+            line-height: 110px;
+        }
+
+        .sub-footer {
+            grid-column: 3 / span 6;
+        }
+
+        .footer {
+            grid-column: 1 / span 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <header class="item header">Header</header>
+        <div class="item link">Link</div>
+        <aside class="item menu">Menu</aside>
+        <main class="item content">
+            Content<br />
+            Content<br />
+            Content<br />
+            Content<br />
+            Content<br />
+            Content
+        </main>
+        <aside class="item right">Right</aside>
+        <div class="item sub-footer">Sub Footer</div>
+        <footer class="item footer">Footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>Tuần 07 - BTTL3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+            font-family: "Times New Roman", serif;
+            color: #222;
+        }
+
+        .page {
+            max-width: 1150px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 1px solid #c8c8c8;
+        }
+
+        .title-wrap {
+            text-align: center;
+            padding: 10px 16px 14px;
+            border-bottom: 1px solid #d6d6d6;
+        }
+
+        .subtitle {
+            margin: 0;
+            font-size: 11px;
+            color: #607d8b;
+        }
+
+        .title {
+            margin: 5px 0 0;
+            color: #0b51a8;
+            font-size: 34px;
+        }
+
+        .nav {
+            background: #0f4fb9;
+            color: #ffffff;
+            display: grid;
+            grid-template-columns: auto auto auto auto 1fr;
+            gap: 2px;
+            align-items: center;
+            padding: 0 8px;
+            min-height: 34px;
+        }
+
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 6px 8px;
+        }
+
+        .search {
+            justify-self: end;
+            width: 230px;
+            height: 22px;
+            border: 1px solid #b8c7e7;
+            padding: 0 6px;
+            font-size: 12px;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 2.2fr 1fr;
+            gap: 16px;
+            padding: 12px;
+        }
+
+        .section-title {
+            margin: 0 0 10px;
+            font-size: 19px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 6px;
+        }
+
+        .news-item {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 12px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid #dedede;
+            padding-bottom: 12px;
+        }
+
+        .news-item img {
+            width: 220px;
+            height: 130px;
+            object-fit: cover;
+            border: 1px solid #c3c3c3;
+        }
+
+        .news-item h3 {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.3;
+        }
+
+        .meta {
+            margin: 5px 0;
+            color: #6b6b6b;
+            font-size: 12px;
+        }
+
+        .desc {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.35;
+            text-align: justify;
+        }
+
+        .right-box {
+            margin-bottom: 14px;
+            border: 1px solid #d8d8d8;
+        }
+
+        .right-box h4 {
+            margin: 0;
+            padding: 8px;
+            background: #f0f0f0;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        .right-box ul {
+            margin: 0;
+            padding: 10px 20px;
+            font-size: 13px;
+        }
+
+        .right-box li {
+            margin-bottom: 8px;
+        }
+
+        .folder {
+            padding: 10px;
+            background: #111;
+            color: #fff;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .folder:last-child {
+            margin-bottom: 0;
+            background: #c064dd;
+        }
+
+        .contact {
+            border-top: 1px solid #d8d8d8;
+            padding: 10px 12px;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="title-wrap">
+            <p class="subtitle">TRUONG DAI HOC CONG THUONG THANH PHO HO CHI MINH</p>
+            <h1 class="title">KHOA CONG NGHE THONG TIN</h1>
+        </header>
+
+        <nav class="nav">
+            <a href="#">Gioi thieu</a>
+            <a href="#">Dao tao</a>
+            <a href="#">Nghien cuu</a>
+            <a href="#">Doan hoi</a>
+            <input class="search" type="text" placeholder="Tim kiem thong tin..." />
+        </nav>
+
+        <div class="main">
+            <section>
+                <h2 class="section-title">Tin tuc hoat dong</h2>
+                <article class="news-item">
+                    <img src="img/Goat.jpg" alt="Tin tuc" />
+                    <div>
+                        <h3>
+                            Truong Dai hoc Cong Thuong TP.HCM hoi thao quy mo lon ve khoa hoc
+                            va cong nghe nam 2026
+                        </h3>
+                        <p class="meta">Ngay dang: 30/03/2026</p>
+                        <p class="desc">
+                            Chuong trinh tao moi truong trao doi hoc thuat cho giang vien va sinh
+                            vien, dong thoi ket noi nha truong voi doanh nghiep trong linh vuc CNTT.
+                        </p>
+                    </div>
+                </article>
+
+                <h2 class="section-title">Dao tao - Hoc thuat - Doan the - Thuc tap</h2>
+                <article class="news-item">
+                    <img src="img/Goat.jpg" alt="Dao tao" />
+                    <div>
+                        <h3>Thong bao lich thi cuoi ky va ke hoach thuc tap hoc ky he</h3>
+                        <p class="meta">Ngay cap nhat: 14/04/2026</p>
+                        <p class="desc">
+                            Sinh vien xem ke hoach chi tiet theo tung lop hoc phan, cac moc thoi
+                            gian quan trong va huong dan nop bao cao tren cong thong tin khoa.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <aside>
+                <div class="right-box">
+                    <h4>Thong bao</h4>
+                    <ul>
+                        <li>Thong bao lich nghi le 30/4 va 1/5</li>
+                        <li>Dang ky de tai NCKH cap khoa</li>
+                        <li>Lich bao ve khoa luan tot nghiep</li>
+                    </ul>
+                </div>
+
+                <div class="right-box">
+                    <h4>Thu muc</h4>
+                    <div class="folder">Danh sach sinh vien nhan hoc bong theo dot</div>
+                    <div class="folder">Lop hoc phan mo trong tuan 17/2026</div>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="contact">
+            <strong>Khoa Cong nghe Thong tin</strong><br />
+            Dia chi: 140 Le Trong Tan, Tay Thanh, Tan Phu, TP.HCM<br />
+            So dien thoai: (028) 3816 3319 - Email: cntt@huit.edu.vn
+        </footer>
+    </div>
+</body>
+</html>
