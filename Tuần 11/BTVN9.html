@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Bài tập về nhà #9</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body class="bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold" style="color: #1a365d;">About</h1>
+                <p class="text-muted">Trường Đại học Công nghiệp Thực phẩm TPHCM</p>
+            </div>
+            <div class="row g-4 align-items-stretch max-w-75 mx-auto">
+                <div class="col-md-6">
+                    <img src="https://huit.edu.vn/images/tin-tuc-hoat-dong/truong-dai-hoc-cong-nghiep-thuc-pham-tp-hcm-hufi-chinh-thuc-doi-ten-thanh-truong-dai-hoc-cong-thuong-tp-hcm-huit.jpg" class="img-fluid rounded shadow-sm w-100 h-100" style="object-fit: cover;" >
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-header bg-light p-0 border-0">
+                            <ul class="nav nav-pills nav-fill bg-secondary bg-opacity-10 rounded-top">
+                                <li class="nav-item">
+                                    <button class="nav-link active fw-bold rounded-0 py-3 tab-btn text-white" data-target="history">Lịch Sử</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link fw-bold rounded-0 py-3 tab-btn text-white" data-target="vision">Tầm Nhìn</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link fw-bold rounded-0 py-3 tab-btn text-white" data-target="mission">Sứ Mạng</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body p-4 text-muted lh-lg">
+                            <div class="tab-pane d-block" id="history">
+                                <h5 class="fw-bold text-dark mb-3">Lịch Sử</h5>
+                                <p>1982: Sau ngày thống nhất đất nước, nhu cầu cán bộ công nhân viên chức các ngành, các địa phương ở miền Nam rất lớn. Ngày 09/09/1982 Bộ Công nghiệp Thực phẩm ban hành quyết định 986/CNTP về việc thành lập trường Kinh tế Kỹ thuật Công nghiệp Thực phẩm TP. Hồ Chí Minh nhằm bồi dưỡng, đào tạo đội ngũ cán bộ kinh tế kỹ thuật cho ngành công nghiệp thực phẩm tại phía Nam...</p>
+                            </div>
+                            <div class="tab-pane d-none" id="vision">
+                                <h5 class="fw-bold text-dark mb-3">Tầm Nhìn</h5>
+                                <p>Trở thành cơ sở giáo dục đại học định hướng ứng dụng hàng đầu của quốc gia, có vị thế trong khu vực và quốc tế. Môi trường học tập và nghiên cứu hiện đại, năng động, sáng tạo.</p>
+                            </div>
+                            <div class="tab-pane d-none" id="mission">
+                                <h5 class="fw-bold text-dark mb-3">Sứ Mạng</h5>
+                                <p>Đào tạo nhân lực chất lượng cao, nghiên cứu khoa học và chuyển giao công nghệ trong các lĩnh vực, đặc biệt là nhóm ngành công nghiệp thực phẩm, góp phần thúc đẩy sự phát triển kinh tế - xã hội của đất nước.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.classList.remove('text-dark');
+                        btn.classList.add('text-secondary');
+                    });
+
+                    tabPanes.forEach(pane => {
+                        pane.classList.remove('d-block');
+                        pane.classList.add('d-none');
+                    });
+                    button.classList.add('active', 'text-white');
+                    button.classList.remove('text-dark');
+                    const targetId = button.getAttribute('data-target');
+                    document.getElementById(targetId).classList.remove('d-none');
+                    document.getElementById(targetId).classList.add('d-block');
+                });
+            });
+        </script>
+    </body>
+</html>

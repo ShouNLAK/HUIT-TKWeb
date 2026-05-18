@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Bài tập về nhà #10</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #ffffff;
+                padding: 40px 15px;
+            }
+            .sale-container {
+                background-color: #f4f6f9;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            .countdown-box {
+                background-color: #12283a;
+                color: white;
+                width: 70px;
+                height: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 2px;
+            }
+            .countdown-box .number {
+                font-size: 26px;
+                font-weight: bold;
+                line-height: 1;
+                margin-bottom: 3px;
+            }
+            .countdown-box .label {
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            .sale-title {
+                color: #2b579a;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+            .end-date-text {
+                font-size: 14px;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row sale-container shadow-sm mx-auto" style="max-width: 900px;">
+                <div class="col-md-5 p-0">
+                    <img src="https://i.pinimg.com/originals/d3/bb/97/d3bb970f0cce8ff0571a728c2c06b0ba.jpg" class="img-fluid h-100" >
+                </div>
+                <div class="col-md-7 p-5 d-flex flex-column justify-content-center">
+                    <h5 class="sale-title mb-3">SALE UP TO 70% OFF</h5>
+                    <p class="fw-bold end-date-text mb-4">Kết Thúc Vào: <span id="date-display">18/05/2026 - 15:20:00</span></p>
+                    <p class="text-muted mb-4" style="font-size: 14px;">Nhanh chân đến mua ngay, chương trình sẽ kết thúc nhanh chóng.</p>
+                    <div id="countdown-wrapper" class="d-flex gap-3">
+                        <div class="countdown-box">
+                            <span class="number" id="days">00</span>
+                            <span class="label">NGÀY</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="number" id="hours">00</span>
+                            <span class="label">GIỜ</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="number" id="minutes">00</span>
+                            <span class="label">PHÚT</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="number" id="seconds">00</span>
+                            <span class="label">GIÂY</span>
+                        </div>
+                    </div>
+                    <div id="expired-msg" class="d-none">
+                        <h6 class="fw-bold text-dark mt-2">Chương Trình Sale Đã Kết Thúc!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const dateDisplay = document.getElementById("date-display").textContent.trim();
+            const [datePart, timePart] = dateDisplay.split(" - ");
+            const [day, month, year] = datePart.split("/");
+            const formattedDate = `${year}-${month}-${day}T${timePart}`;
+            const countDownDate = new Date(formattedDate).getTime();
+            const countdownTimer = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+
+                if (distance >= 0) {
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    const formatZero = (num) => num < 10 ? "0" + num : num;
+
+                    document.getElementById("days").innerHTML = formatZero(days);
+                    document.getElementById("hours").innerHTML = formatZero(hours);
+                    document.getElementById("minutes").innerHTML = formatZero(minutes);
+                    document.getElementById("seconds").innerHTML = formatZero(seconds);
+                } 
+                
+                else {
+                    clearInterval(countdownTimer);
+
+                    document.getElementById("countdown-wrapper").classList.remove("d-flex");
+                    document.getElementById("countdown-wrapper").classList.add("d-none");
+                    
+                    document.getElementById("expired-msg").classList.remove("d-none");
+                    document.getElementById("expired-msg").classList.add("d-block");
+                }
+            }, 1000);
+        </script>
+    </body>
+</html>
