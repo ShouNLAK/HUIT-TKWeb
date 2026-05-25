@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Bài tập tại lớp 5 (Gửi Dữ Liệu)</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            body { background-color: #f8f9fa; padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+            .form-container { max-width: 800px; margin: 0 auto; background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+            .custom-bg { background-color: #d1d5db; color: #000; font-weight: bold; text-align: center; font-size: 1.25rem; }
+        </style>
+    </head>
+    <body>
+        <div class="container form-container">
+            <h3 class="text-center mb-4 text-primary">TRANG 1: NHẬP LIỆU (BTTL1.html)</h3>
+            <form id="F1" name="F1">
+                <div class="card mb-4 border-secondary">
+                    <div class="card-header custom-bg">THÔNG TIN NGƯỜI GỬI</div>
+                    <div class="card-body">
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Người gửi</label>
+                            <div class="col-sm-9"><input type="text" class="form-control" id="txt_NameSender" value="Nguyễn Hải Yến"></div>
+                        </div>
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* E-Mail</label>
+                            <div class="col-sm-9"><input type="email" class="form-control" id="txt_EmailSender" value="yennh@hufl.edu.vn"></div>
+                        </div>
+                        <div class="row mb-0 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Điện thoại</label>
+                            <div class="col-sm-9"><input type="tel" class="form-control" id="txt_PhoneSender" value="0908123456"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 border-secondary">
+                    <div class="card-header custom-bg">THÔNG TIN NGƯỜI NHẬN</div>
+                    <div class="card-body">
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Người nhận</label>
+                            <div class="col-sm-9"><input type="text" class="form-control" id="txt_NameReceiver" placeholder="Nhập họ tên người nhận"></div>
+                        </div>
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Điện thoại</label>
+                            <div class="col-sm-9"><input type="tel" class="form-control" id="txt_PhoneReceiver" placeholder="Nhập số điện thoại"></div>
+                        </div>
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Địa chỉ</label>
+                            <div class="col-sm-9"><input type="text" class="form-control" id="txt_AddressReceiver" placeholder="Nhập địa chỉ nhận hàng"></div>
+                        </div>
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Tỉnh/TP</label>
+                            <div class="col-sm-9">
+                                <select class="form-select" id="ddl_City">
+                                    <option value="TP.HCM nội thành">TP.HCM nội thành</option>
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="Huế">Huế</option>
+                                    <option value="Đà Nẵng">Đà Nẵng</option>
+                                    <option value="Cần Thơ">Cần Thơ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-0 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Quận</label>
+                            <div class="col-sm-9">
+                                <select class="form-select" id="ddl_District">
+                                    <option value="Quận 1">Quận 1</option>
+                                    <option value="Quận 2">Quận 2</option>
+                                    <option value="Quận Tân Bình">Quận Tân Bình</option>
+                                    <option value="Quận Thủ Đức">Quận Thủ Đức</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-2 d-flex justify-content-center gap-3">
+                    <button type="button" class="btn btn-light border border-dark fw-bold px-4 py-2" onclick="XuatThongTin()">GỬI THÔNG TIN</button>
+                    <button type="button" class="btn btn-primary fw-bold px-4 py-2" onclick="XuatThongTinTrangKhac()">GỬI THÔNG TIN SANG TRANG 1B</button>
+                </div>
+            </form>
+            <div id="resultArea" style="display: none; border-top: 2px dashed #ccc; padding-top: 30px; margin-top: 20px;">
+                <h4 class="text-danger text-center fw-bold">HIỂN THỊ TẠI CHỖ (BÀI 1)</h4>
+                <div id="demoText" class="text-center text-secondary">Đã xuất thông tin thành công tại form này!</div>
+            </div>
+        </div>
+        <script src="BTTL5-A.js"></script>
+    </body>
+</html>

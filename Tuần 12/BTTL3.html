@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Bài tập tại lớp 3</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            body {
+                background-color: #f8f9fa;
+                padding-top: 40px;
+                font-family: Arial, sans-serif;
+            }
+            .product-img {
+                max-width: 100%;
+                border: 1px solid #dee2e6;
+                border-radius: 5px;
+                padding: 5px;
+                background: #fff;
+            }
+            .text-blue {
+                color: #4da6ff;
+                font-weight: bold;
+            }
+            .text-yellow {
+                color: #ffc107;
+                font-weight: bold;
+            }
+            .review-box {
+                border-bottom: 2px solid #e9ecef;
+                padding: 15px 0;
+            }
+            .review-box:last-child {
+                border-bottom: none;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container mb-5">
+        <div class="row bg-white p-4 rounded shadow-sm">
+            <div class="col-md-7 border-end pe-4">
+                <div class="text-center mb-4">
+                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Laptop" class="product-img mb-3" id="prod-image">
+                    <h4 class="text-blue text-start" id="prod-name">Tên sản phẩm</h4>
+                    <h5 class="text-yellow text-start" id="prod-price">Giá: 0 VND</h5>
+                </div>
+                <hr><p class="fw-bold text-secondary" id="prod-rating">Đánh giá sản phẩm: 0 (0 đánh giá)</p><hr>
+                <div id="reviews-list"></div>
+            </div>
+            <div class="col-md-5 ps-4">
+                <h4 class="mb-4 text-secondary">Thêm Đánh Giá Mới</h4>
+                <form id="addReviewForm">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Tên người đánh giá</label>
+                        <input type="text" class="form-control" id="revName" required placeholder="Nhập họ tên...">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Tuổi</label>
+                        <input type="number" class="form-control" id="revAge" required min="1" placeholder="Nhập tuổi...">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Nội dung đánh giá</label>
+                        <textarea class="form-control" id="revContent" rows="3" required placeholder="Sản phẩm này thế nào?"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">Điểm số (1-5)</label>
+                        <select class="form-select" id="revScore" required>
+                            <option value="5">5 - Rất tốt</option>
+                            <option value="4">4 - Tốt</option>
+                            <option value="3">3 - Bình thường</option>
+                            <option value="2">2 - Tệ</option>
+                            <option value="1">1 - Rất tệ</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 fw-bold">Gửi Phản Hồi</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+        <script src="BTTL3.js"></script>
+    </body>
+</html>

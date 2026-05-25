@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Bài tập tại lớp 1</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container form-container">
+            <form id="F1" name="F1">
+                <div class="card mb-4 border-secondary">
+                    <div class="card-header custom-bg" style="text-align: center; font-weight: bold; font-size: 1.25rem;">
+                        THÔNG TIN NGƯỜI GỬI
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Người gửi</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="txt_NameSender" name="txt_NameSender" placeholder="Nhập họ tên người gửi">
+                            </div>
+                        </div>
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* E-Mail</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="txt_EmailSender" name="txt_EmailSender" placeholder="example@domain.com">
+                            </div>
+                        </div>
+                        <div class="row mb-0 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Điện thoại</label>
+                            <div class="col-sm-9">
+                                <input type="tel" class="form-control" id="txt_PhoneSender" name="txt_PhoneSender" placeholder="Nhập số điện thoại">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 border-secondary">
+                    <div class="card-header custom-bg" style="text-align: center; font-weight: bold; font-size: 1.25rem;">
+                        THÔNG TIN NGƯỜI NHẬN
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Người nhận</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="txt_NameReceiver" name="txt_NameReceiver" placeholder="Nhập họ tên người nhận">
+                            </div>
+                        </div>
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Điện thoại</label>
+                            <div class="col-sm-9">
+                                <input type="tel" class="form-control" id="txt_PhoneReceiver" name="txt_PhoneReceiver" placeholder="Nhập số điện thoại">
+                            </div>
+                        </div>
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Địa chỉ</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="txt_AddressReceiver" name="txt_AddressReceiver" placeholder="Nhập địa chỉ nhận hàng">
+                            </div>
+                        </div>
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Tỉnh/TP</label>
+                            <div class="col-sm-9">
+                                <select class="form-select" id="ddl_City" name="ddl_City">
+                                    <option value="TP.HCM">TP.HCM</option>
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="Huế">Huế</option>
+                                    <option value="Đà Nẵng">Đà Nẵng</option>
+                                    <option value="Quảng Ninh">Quảng Ninh</option>
+                                    <option value="Cần Thơ">Cần Thơ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-0 align-items-center">
+                            <label class="col-sm-3 col-form-label fw-bold">* Quận</label>
+                            <div class="col-sm-9">
+                                <select class="form-select" id="ddl_District" name="ddl_District">
+                                    <option value="Quận 1">Quận 1</option>
+                                    <option value="Quận 2">Quận 2</option>
+                                    <option value="Quận 3">Quận 3</option>
+                                    <option value="Quận Tân Phú">Quận Tân Phú</option>
+                                    <option value="Quận Tân Bình">Quận Tân Bình</option>
+                                    <option value="Quận Thủ Đức">Quận Thủ Đức</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mb-5">
+                    <button type="button" class="btn btn-light border border-dark fw-bold px-4 py-2" onclick="XuatThongTin()">GỬI THÔNG TIN</button>
+                </div>
+            </form>
+            <div id="resultArea" style="display: none;">
+                <h3 class="text-danger-custom text-center fw-bold mb-4">THÔNG TIN BẠN VỪA NHẬP</h3>
+                <div class="mb-4 text-center text-sm-start">
+                    <div class="result-header">THÔNG TIN NGƯỜI GỬI</div>
+                    <div class="row mb-2">
+                        <div class="col-sm-3 fw-bold">* Người gửi:</div>
+                        <div class="col-sm-9 text-danger-custom" id="res_NameSender"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-3 fw-bold">* E-Mail:</div>
+                        <div class="col-sm-9 text-danger-custom" id="res_EmailSender"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-3 fw-bold">* Điện thoại:</div>
+                        <div class="col-sm-9 text-danger-custom" id="res_PhoneSender"></div>
+                    </div>
+                </div>
+                <div class="mb-4 text-center text-sm-start">
+                    <div class="result-header">THÔNG TIN NGƯỜI NHẬN</div>
+                    <div class="row mb-2">
+                        <div class="col-sm-3 fw-bold">* Người nhận:</div>
+                        <div class="col-sm-9 text-danger-custom" id="res_NameReceiver"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-3 fw-bold">* Điện thoại:</div>
+                        <div class="col-sm-9 text-danger-custom" id="res_PhoneReceiver"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-3 fw-bold">* Địa chỉ:</div>
+                        <div class="col-sm-9 text-danger-custom" id="res_AddressReceiver"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-3 fw-bold">* Tỉnh/TP:</div>
+                        <div class="col-sm-9 text-danger-custom" id="res_City"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-3 fw-bold">* Quận:</div>
+                        <div class="col-sm-9 text-danger-custom" id="res_District"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function XuatThongTin() {
+                var form = document.forms["F1"];
+                var nameSender = form["txt_NameSender"].value;
+                var emailSender = form["txt_EmailSender"].value;
+                var phoneSender = form["txt_PhoneSender"].value;
+                var nameReceiver = form["txt_NameReceiver"].value;
+                var phoneReceiver = form["txt_PhoneReceiver"].value;
+                var addressReceiver = form["txt_AddressReceiver"].value;
+                var city = form["ddl_City"].value;
+                var district = form["ddl_District"].value;
+
+                document.getElementById("res_NameSender").innerText = nameSender;
+                document.getElementById("res_EmailSender").innerText = emailSender;
+                document.getElementById("res_PhoneSender").innerText = phoneSender;
+                document.getElementById("res_NameReceiver").innerText = nameReceiver;
+                document.getElementById("res_PhoneReceiver").innerText = phoneReceiver;
+                document.getElementById("res_AddressReceiver").innerText = addressReceiver;
+                document.getElementById("res_City").innerText = city;
+                document.getElementById("res_District").innerText = district;
+                document.getElementById("resultArea").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

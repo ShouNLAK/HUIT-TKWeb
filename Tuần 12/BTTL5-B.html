@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bài tập tại lớp 5 (Nhận Dữ Liệu)</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { background-color: #f8f9fa; padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+            .form-container { max-width: 800px; margin: 0 auto; background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+            .result-header { background-color: #d1d5db; color: #000; font-weight: bold; padding: 5px 15px; display: inline-block; margin-bottom: 15px; text-transform: uppercase; }
+            .text-danger-custom { color: #dc3545; }
+        </style>
+    </head>
+    <body>
+
+        <div class="container form-container">
+            <h3 class="text-center mb-4 text-success">TRANG 1B: ĐỌC DỮ LIỆU TỪ SESSION (BTTL5.html)</h3>
+            <h4 class="text-danger-custom text-center fw-bold mb-4">THÔNG TIN BẠN VỪA NHẬP</h4>
+            
+            <div class="mb-4 text-center text-sm-start">
+                <div class="result-header">THÔNG TIN NGƯỜI GỬI</div>
+                <div class="row mb-2">
+                    <div class="col-sm-3 fw-bold">* Người gửi:</div>
+                    <div class="col-sm-9 text-danger-custom" id="res_NameSender"></div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-3 fw-bold">* E-Mail:</div>
+                    <div class="col-sm-9 text-danger-custom" id="res_EmailSender"></div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-3 fw-bold">* Điện thoại:</div>
+                    <div class="col-sm-9 text-danger-custom" id="res_PhoneSender"></div>
+                </div>
+            </div>
+
+            <div class="mb-4 text-center text-sm-start">
+                <div class="result-header">THÔNG TIN NGƯỜI NHẬN</div>
+                <div class="row mb-2">
+                    <div class="col-sm-3 fw-bold">* Người nhận:</div>
+                    <div class="col-sm-9 text-danger-custom" id="res_NameReceiver"></div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-3 fw-bold">* Điện thoại:</div>
+                    <div class="col-sm-9 text-danger-custom" id="res_PhoneReceiver"></div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-3 fw-bold">* Địa chỉ:</div>
+                    <div class="col-sm-9 text-danger-custom" id="res_AddressReceiver"></div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-3 fw-bold">* Tỉnh/TP:</div>
+                    <div class="col-sm-9 text-danger-custom" id="res_City"></div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-3 fw-bold">* Quận:</div>
+                    <div class="col-sm-9 text-danger-custom" id="res_District"></div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button type="button" class="btn btn-secondary fw-bold px-4 py-2" onclick="QuayLai()">QUAY LẠI TRANG 1</button>
+            </div>
+        </div>
+        <script src="BTTL5-B.js"></script>
+    </body>
+</html>
