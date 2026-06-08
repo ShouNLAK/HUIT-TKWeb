@@ -1,0 +1,232 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore - Thông tin đơn hàng</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f4f6f9; }
+        .card-ghost {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .price-old {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 0.9em;
+            margin-right: 10px;
+        }
+        .price-new {
+            color: #e53935;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .product-img { height: 250px; object-fit: cover; }
+        .product-card { transition: transform 0.2s ease-in-out; }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">Book<span class="text-danger">Store</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Liên hệ</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm">
+                    <button class="btn btn-danger" type="button">Tìm</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-7">
+                <form id="F1" class="card card-ghost p-4 needs-validation" novalidate>
+                    <h4 class="mb-4">THÔNG TIN NGƯỜI NHẬN</h4>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label class="form-label">Họ tên</label>
+                            <input type="text" name="nguoiNhan" class="form-control" required>
+                            <div class="invalid-feedback">Họ tên không được để trống.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Phường</label>
+                            <select name="quan" class="form-select" required>
+                                <option value="">-- Chọn Phường --</option>
+                                <option>Phường 1</option>
+                                <option>Phường 2</option>
+                                <option>Phường 3</option>
+                                <option>Phường Tân Phú</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Tỉnh/TP</label>
+                            <select name="tinh" class="form-select" required>
+                                <option value="">-- Chọn Tỉnh/TP --</option>
+                                <option>TP.HCM Nội Thành</option>
+                                <option>Hà Nội</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Địa chỉ</label>
+                            <input type="text" name="diachiNhan" class="form-control" required>
+                            <div class="invalid-feedback">Địa chỉ không được để trống.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Di động</label>
+                            <input type="text" name="dienthoaiNhan" class="form-control" required>
+                            <div class="invalid-feedback">Số điện thoại phải gồm đúng 10 chữ số.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary">GỬI THÔNG TIN</button>
+                        <button type="reset" class="btn btn-outline-secondary ms-2">Xóa</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card card-ghost p-4 h-100">
+                    <h4 class="mb-4 text-primary">Thông tin vừa nhập</h4>
+                    <p class="mb-2"><b>Người nhận:</b> <span id="viewNguoiNhan" class="text-danger"></span></p>
+                    <p class="mb-2"><b>Phường:</b> <span id="viewQuan"></span></p>
+                    <p class="mb-2"><b>Tỉnh/TP:</b> <span id="viewTinh"></span></p>
+                    <p class="mb-2"><b>Địa chỉ:</b> <span id="viewDiachi"></span></p>
+                    <p class="mb-2"><b>Di động:</b> <span id="viewDienthoai"></span></p>
+                    <p class="mb-0"><b>Email:</b> <span id="viewEmail"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h4 class="mb-4">Sản phẩm liên quan</h4>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 product-card border-0">
+                        <img src="https://tiemsach.org/wp-content/uploads/2023/07/Ebook-Dac-nhan-tam.jpg" class="card-img-top product-img" alt="Đắc nhân tâm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Đắc Nhân Tâm</h5>
+                            <div class="mt-auto pt-2">
+                                <span class="price-old">150.000đ</span>
+                                <span class="price-new">129.000đ</span>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 product-card border-0">
+                        <img src="https://upload.wikimedia.org/wikipedia/vi/9/9c/Nh%C3%A0_gi%E1%BA%A3_kim_%28s%C3%A1ch%29.jpg" class="card-img-top product-img" alt="Nhà giả kim">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Nhà Giả Kim</h5>
+                            <div class="mt-auto pt-2">
+                                <span class="price-new">109.000đ</span>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 product-card border-0">
+                        <img src="https://upload.wikimedia.org/wikipedia/vi/0/05/Littleprince.JPG" class="card-img-top product-img" alt="Hoàng tử bé">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Hoàng Tử Bé</h5>
+                            <div class="mt-auto pt-2">
+                                <span class="price-old">99.000đ</span>
+                                <span class="price-new">79.000đ</span>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-success text-white mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="fw-bold">BookStore</h4>
+                    <p class="mb-1">Địa chỉ: 125 Hòa Bình, Q. Tân Phú, TP. HCM</p>
+                    <p class="mb-1">Điện thoại: 0909 000 111</p>
+                    <p class="mb-0">Email: contact@bookstore.vn</p>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0 d-flex align-items-end justify-content-md-end">
+                    <p class="mb-0">&copy; 2025 BookStore. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (sessionStorage.getItem("NguoiNhan")) {
+                document.getElementById('viewNguoiNhan').innerText = sessionStorage.getItem("NguoiNhan");
+            }
+        });
+
+        document.getElementById("F1").addEventListener("submit", function (e) {
+            e.preventDefault(); 
+            
+            let isValid = true;
+            const hoTen = this.elements["nguoiNhan"];
+            const diaChi = this.elements["diachiNhan"];
+            const dienThoai = this.elements["dienthoaiNhan"];
+            
+            [hoTen, diaChi, dienThoai].forEach(el => el.classList.remove("is-valid", "is-invalid"));
+
+            if (hoTen.value.trim() === "") {
+                hoTen.classList.add("is-invalid");
+                isValid = false;
+            } else {
+                hoTen.classList.add("is-valid");
+            }
+
+            if (diaChi.value.trim() === "") {
+                diaChi.classList.add("is-invalid");
+                isValid = false;
+            } else {
+                diaChi.classList.add("is-valid");
+            }
+
+            const phoneRegex = /^\d{10}$/; 
+            if (!phoneRegex.test(dienThoai.value.trim())) {
+                dienThoai.classList.add("is-invalid");
+                isValid = false;
+            } else {
+                dienThoai.classList.add("is-valid");
+            }
+
+            if (!isValid) return;
+
+            const fd = new FormData(this);
+            sessionStorage.setItem("NguoiNhan", fd.get('nguoiNhan'));
+
+            document.getElementById('viewNguoiNhan').innerText = sessionStorage.getItem("NguoiNhan");
+            document.getElementById('viewQuan').innerText = fd.get('quan');
+            document.getElementById('viewTinh').innerText = fd.get('tinh');
+            document.getElementById('viewDiachi').innerText = fd.get('diachiNhan');
+            document.getElementById('viewDienthoai').innerText = fd.get('dienthoaiNhan');
+            document.getElementById('viewEmail').innerText = fd.get('email');
+        });
+    </script>
+</body>
+</html>
